@@ -5,9 +5,10 @@ Use `fetch` and VueJS to read data from a third-party API.
 
 ## Choose an API
 
-This lab will have you evaluate an API and read the docs to deduce what is required to display data.
+This lab will have you evaluate an API and read the docs to deduce what is required to display data. Remember, be skeptical of API!
 
 Possible API choices:
+
 * https://newsapi.org/
 * https://developers.google.com/books/
 * https://swapi.co/
@@ -15,6 +16,7 @@ Possible API choices:
 * https://www.goodreads.com/api
 
 API Requirements:
+
 * Has to support CORS (search from AJAX call) verify [here](test-cors.org)
 * Supports searching or some type of parameter
 * You most likely will need to sign up for an API "key"
