@@ -30,7 +30,7 @@ Use a default `GET` (or hard-code a query parameter) and display data.
 #### Model
 
 1. Encapsulate API call to service in a module
-1. Import module to (`App`) component. Use the `create` life-cycle method to initiate the search, _but do the actual work in a `method`.
+1. Import module to (`App`) component. Use the `created` life-cycle method to initiate the search, _but do the actual work in a `method`.
 1. Set the data when returned from the callback
 
 #### View
