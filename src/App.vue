@@ -40,7 +40,7 @@ h1 {
   display: flex;
   justify-content: center;
   font-family: 'Diplomata SC', cursive;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 .search {
