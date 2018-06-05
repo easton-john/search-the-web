@@ -3,7 +3,7 @@
       <section>
         <Article
           v-for="article in news"
-          :key="article.source.id"
+          :key="article.url"
           :article="article"
         />
       </section>
