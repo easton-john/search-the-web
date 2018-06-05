@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <SearchControl :onSearch="handleSearch"/>
     <NewsList :news="news" />
+    <SearchControl :onSearch="handleSearch"/>
   </div>
 </template>
 

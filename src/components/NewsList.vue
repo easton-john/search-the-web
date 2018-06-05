@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>News List</h1>
+    <h1>Search</h1>
       <ul>
         <Article 
           v-for="article in news"

@@ -3,10 +3,9 @@
     <h2>
       {{ article.title }}
     </h2>
-    <h3>{{ article.publishedAt }}</h3>
-    <h4>Author: {{article.author }}</h4>
-    <p>Description: {{ article.description }} </p>
-    <a :href="article.url">{{ article.url }} </a>
+    <h3>By: {{article.author }}</h3>
+    <h4>{{ article.publishedAt }}</h4>
+    <p>Description: {{ article.description }} <a :href="article.url">Read More</a> </p>
     <img :src="article.urlToImage">
   
     
@@ -26,7 +25,8 @@ export default {
 <style>
 
 img {
-  width: 300px;
+  width: 250px;
+  float: center;
 }
 
 </style>
