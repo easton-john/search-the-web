@@ -1,13 +1,12 @@
 <template>
   <div>
-    <h1>Search</h1>
-      <ul>
-        <Article 
+      <section>
+        <Article
           v-for="article in news"
           :key="article.source.id"
           :article="article"
         />
-      </ul>
+      </section>
 
   </div>
 </template>
@@ -26,5 +25,9 @@ export default {
 </script>
 
 <style>
+
+section {
+  width: 50%;
+}
 
 </style>

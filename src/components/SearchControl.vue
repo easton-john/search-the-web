@@ -1,7 +1,6 @@
 <template>
   <form @submit.prevent="onSearch(search)">
-    <label>Name:</label>
-    <input v-model="search"/>
+    <input value v-model="search" placeholder="enter keyword"/>
     <button type="submit">Search</button>
   </form>
 
@@ -25,5 +24,13 @@ export default {
 </script>
 
 <style>
+
+input {
+  font-size: 1.5em;
+}
+
+button {
+  font-size: 1.5em;
+}
 
 </style>

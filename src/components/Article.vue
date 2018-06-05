@@ -1,14 +1,10 @@
 <template>
-  <div>
-    <h2>
-      {{ article.title }}
-    </h2>
-    <h3>By: {{article.author }}</h3>
+  <div class="article">
+    <h2>{{ article.title }} </h2>
+    <h3 class="author">By: {{article.author }}</h3>
     <h4>{{ article.publishedAt }}</h4>
-    <p>Description: {{ article.description }} <a :href="article.url">Read More</a> </p>
+    <p><b>Description:</b> {{ article.description }} <a :href="article.url">Read More</a> </p>
     <img :src="article.urlToImage">
-  
-    
 
   </div>
 </template>
@@ -23,6 +19,17 @@ export default {
 </script>
 
 <style>
+
+.article {
+  background: ivory;
+  border-radius: 10px;
+  padding: .5em;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-size: 1em;
+}
 
 img {
   width: 250px;

@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <NewsList :news="news" />
-    <SearchControl :onSearch="handleSearch"/>
+    <h1>News Search</h1>
+    <SearchControl class="search" :onSearch="handleSearch"/>
+    <NewsList class="articles" :news="news" />
   </div>
 </template>
 
@@ -28,12 +29,26 @@ export default {
         this.news = data.articles;
       });
     }
-
   }
 
 };
 </script>
 
 <style>
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.articles {
+  display: flex;
+  justify-content: space-around
+}
 
 </style>
