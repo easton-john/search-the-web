@@ -38,11 +38,13 @@ input {
   padding-left: .30em; 
   margin: 0px;
   border-right: none;
+  margin-bottom: 10px;
 }
 
 button {
   font-size: 1.5em;
   margin: 0px;
+  margin-bottom: 10px;
 }
 
 </style>
