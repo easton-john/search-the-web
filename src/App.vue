@@ -1,28 +1,31 @@
 <template>
   <div id="app">
-    <CocktailList :drinks="drinks" />
+    <SearchControl :onSearch="handleSearch"/>
+    <NewsList :news="news" />
   </div>
 </template>
 
 <script>
-import CocktailList from './components/CockTailList.vue';
-import { getCocktailName } from '../services.api.js';
+import SearchControl from './components/SearchControl';
+import NewsList from './components/NewsList';
+import { getNews } from '../services/api.js';
 
 export default {
   data() {
     return {
-      drinks: null
+      news: null
     };
   },
 
   components: {
-    CocktailList
+    SearchControl,
+    NewsList
   },
 
   methods: {
-    handleSearch() {
-      getCocktailName(name).then(data => {
-        this.drinks = data.drinks;
+    handleSearch(name) {
+      getNews(name).then(data => {
+        this.news = data.articles;
       });
     }
 
