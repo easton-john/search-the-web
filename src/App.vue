@@ -39,6 +39,7 @@ export default {
 h1 {
   display: flex;
   justify-content: center;
+  font-family: 'Diplomata SC', cursive;
 }
 
 .search {

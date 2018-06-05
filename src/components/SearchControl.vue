@@ -1,6 +1,6 @@
 <template>
   <form @submit.prevent="onSearch(search)">
-    <input value v-model="search" placeholder="enter keyword"/>
+    <input v-model="search" placeholder="enter keyword"/>
     <button type="submit">Search</button>
   </form>
 
@@ -10,7 +10,11 @@
 
 export default {
   data() {
-    return { search: '' };
+    return { search: 'alchemy' };
+  },
+
+  created() {
+    this.onSearch(this.search);
   },
 
   props: {
@@ -25,12 +29,20 @@ export default {
 
 <style>
 
+form {
+  margin-bottom: 1em;
+}
+
 input {
   font-size: 1.5em;
+  padding-left: .30em; 
+  margin: 0px;
+  border-right: none;
 }
 
 button {
   font-size: 1.5em;
+  margin: 0px;
 }
 
 </style>

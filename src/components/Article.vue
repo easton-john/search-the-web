@@ -21,7 +21,7 @@ export default {
 <style>
 
 .article {
-  background: ivory;
+  background: whitesmoke;
   border-radius: 10px;
   padding: .5em;
   margin-bottom: 10px;
